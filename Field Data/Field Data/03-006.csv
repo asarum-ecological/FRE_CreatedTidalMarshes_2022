@@ -1,0 +1,56 @@
+﻿SITE_ID,PLOT,COMMUNITY,Scientific,SPECIES_CODE,PERCENT_COVER,ORIGIN,MAX_LH
+03-006,8,1,Agrosts stolonifera,creeping bentgrass,3,E,
+03-006,9,1,Agrosts stolonifera,creeping bentgrass,3,E,
+03-006,11,1,Agrosts stolonifera,creeping bentgrass,1,E,
+03-006,3,1,Lythrum salicaria,purple loosestrife,0.5,I,
+03-006,4,1,Lythrum salicaria,purple loosestrife,2.0,I,
+03-006,6,1,Iris pseudacorus,yellow iris,9.0,I,
+03-006,9,1,Lythrum salicaria,purple loosestrife,1,I,
+03-006,10,1,Lythrum salicaria,purple loosestrife,2,I,
+03-006,13,1,Phalaris arundinacea,reed canarygrass,2,I,
+03-006,1,1,Carex lyngbei,Lyngbye's sedge ,50.0,N,114
+03-006,1,1,Juncus balticus,Baltic rush ,50.0,N,89
+03-006,1,1,Potentilla egedii,coast silverweed,0.5,N,
+03-006,2,1,Carex lyngbei,Lyngbye's sedge ,40.0,N,110
+03-006,2,1,Juncus balticus,Baltic rush ,60.0,N,124
+03-006,2,1,Potentilla egedii,coast silverweed,0.5,N,
+03-006,3,1,Lilaeopsis occidentalis,western lilaeopsis,0.5,N,
+03-006,3,1,Carex lyngbei,Lyngbye's sedge ,40.0,N,102
+03-006,3,1,Juncus balticus,Baltic rush ,20.0,N,64
+03-006,3,1,Potentilla egedii,coast silverweed,0.5,N,
+03-006,4,1,Carex lyngbei,Lyngbye's sedge ,50.0,N,96
+03-006,4,1,Juncus balticus,Baltic rush ,50.0,N,100
+03-006,4,1,Potentilla egedii,coast silverweed,2.0,N,
+03-006,4,1,Lilaeopsis occidentalis,western lilaeopsis,0.5,N,
+03-006,5,1,Carex lyngbei,Lyngbye's sedge ,5.0,N,93
+03-006,5,1,Juncus balticus,Baltic rush ,95.0,N,90
+03-006,5,1,Potentilla egedii,coast silverweed,3.0,N,
+03-006,6,1,Carex lyngbei,Lyngbye's sedge ,20.0,N,94
+03-006,6,1,Juncus balticus,Baltic rush ,55.0,N,133
+03-006,6,1,Potentilla egedii,coast silverweed,2.0,N,
+03-006,6,1,Lilaeopsis occidentalis,western lilaeopsis,0.5,N,
+03-006,7,1,Carex lyngbei,Lyngbye's sedge ,10.0,N,105
+03-006,7,1,Juncus balticus,Baltic rush ,90.0,N,125
+03-006,7,1,Potentilla egedii,coast silverweed,2.0,N,
+03-006,7,1,Lilaeopsis occidentalis,western lilaeopsis,0.5,N,
+03-006,8,1,Carex lyngbei,Lyngbye's sedge ,55.0,N,106
+03-006,8,1,Juncus balticus,Baltic rush ,45.0,N,107
+03-006,8,1,Potentilla egedii,coast silverweed,0.5,N,
+03-006,9,1,Carex lyngbei,Lyngbye's sedge ,30,N,85
+03-006,9,1,Juncus balticus,Baltic rush ,30,N,77
+03-006,9,1,Potentilla egedii,coast silverweed,10,N,
+03-006,9,1,Symphyotrichum subspicatum,Douglas' aster,0.5,N,
+03-006,9,1,Eleocharis palustris,common spike-rush,2,N,
+03-006,10,1,Carex lyngbei,Lyngbye's sedge ,50,N,109
+03-006,10,1,Juncus balticus,Baltic rush ,50,N,119
+03-006,10,1,Potentilla egedii,coast silverweed,0.5,N,
+03-006,11,1,Carex lyngbei,Lyngbye's sedge ,5,N,94
+03-006,11,1,Juncus balticus,Baltic rush ,95,N,113
+03-006,13,1,Carex lyngbei,Lyngbye's sedge ,20,N,112
+03-006,13,1,Juncus balticus,Baltic rush ,50,N,93
+03-006,13,1,Potentilla egedii,coast silverweed,1,N,
+03-006,13,1,Lycopus sp.,horehound,5,U,
+03-006,3,1,,bare ground,40.0,S,
+03-006,6,1,,log,20.0,S,
+03-006,9,1,,rock,40,S,
+03-006,13,1,,rock,30,S,

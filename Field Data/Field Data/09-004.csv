@@ -1,0 +1,75 @@
+﻿SITE_ID,PLOT,COMMUNITY,Scientific,SPECIES_CODE,PERCENT_COVER,ORIGIN,MAX_LH
+09-004,2-Jan,1,,bare ground,40,S,
+09-004,4-Jan,1,,bare ground,7,S,
+09-004,5-Jan,1,,bare ground,2,S,
+09-004,6-Jan,1,,bare ground,5,S,
+09-004,7-Jan,1,,bare ground,5,S,
+09-004,9-Jan,1,,bare ground,12,S,
+09-004,4-Jan,1,Sagittaria latifolia,broad-leaved arrowhead,5,N,
+09-004,6-Jan,1,Sagittaria latifolia,broad-leaved arrowhead,13,N,
+09-004,4-Jan,1,Typha latifolia,common cattail ,10,N,
+09-004,5-Jan,1,Typha latifolia,common cattail ,7,N,
+09-004,6-Jan,1,Typha latifolia,common cattail ,13,N,
+09-004,4-Jan,1,Eleocharis palustris,common spike rush,30,N,86
+09-004,3-Jan,1,Eleocharis palustris,common spike-rush,20,N,115
+09-004,5-Jan,1,Eleocharis palustris,common spike-rush,5,N,92
+09-004,6-Jan,1,Eleocharis palustris,common spike-rush,13,N,97
+09-004,7-Jan,1,Eleocharis palustris,common spike-rush,4,N,
+09-004,10-Jan,1,Eleocharis palustris,common spike-rush,10,N,92
+09-004,2-Jan,1,Agrostis stolonifera,creeping bentgrass,2,E,
+09-004,3-Jan,1,Agrostis stolonifera,creeping bentgrass,20,E,
+09-004,4-Jan,1,Agrostis stolonifera,creeping bentgrass,30,E,
+09-004,5-Jan,1,Agrostis stolonifera,creeping bentgrass,5,E,
+09-004,6-Jan,1,Agrostis stolonifera,creeping bentgrass,10,E,
+09-004,7-Jan,1,Agrostis stolonifera,creeping bentgrass,35,E,
+09-004,8-Jan,1,Agrostis stolonifera,creeping bentgrass,15,E,
+09-004,10-Jan,1,Agrostis stolonifera,creeping bentgrass,10,E,
+09-004,7-Jan,1,Lilaea scilloides,flowering quillwort,1,N,
+09-004,2-Jan,1,Typha angustifolia,lesser cattail,40,I,
+09-004,3-Jan,1,Typha angustifolia,lesser cattail,5,I,
+09-004,3-Jan,1,Carex lyngbyei,Lyngbye's sedge,75,N,147
+09-004,4-Jan,1,Carex lyngbyei,Lyngbye's sedge,10,N,144
+09-004,5-Jan,1,Carex lyngbyei,Lyngbye's sedge,65,N,140
+09-004,6-Jan,1,Carex lyngbyei,Lyngbye's sedge,12,N,163
+09-004,7-Jan,1,Carex lyngbyei,Lyngbye's sedge,80,N,149
+09-004,8-Jan,1,Carex lyngbyei,Lyngbye's sedge,75,N,147
+09-004,9-Jan,1,Carex lyngbyei,Lyngbye's sedge,70,N,178
+09-004,10-Jan,1,Carex lyngbyei,Lyngbye's sedge,95,N,142
+09-004,6-Jan,1,Bidens cernua,nodding beggarticks,3,N,
+09-004,1-Jan,1,Lythrum salicaria,purple loosestrife,10,I,
+09-004,2-Jan,1,Lythrum salicaria,purple loosestrife,2,I,
+09-004,4-Jan,1,Lythrum salicaria,purple loosestrife,5,I,
+09-004,5-Jan,1,Lythrum salicaria,purple loosestrife,10,I,
+09-004,6-Jan,1,Lythrum salicaria,purple loosestrife,4,I,
+09-004,8-Jan,1,Lythrum salicaria,purple loosestrife,7,I,
+09-004,2-Jan,1,Epilobium ciliatum ssp. watsonii,purple-leaved willowherb,1,N,
+09-004,2-Jan,1,Phalaris arundinacea,reed canarygrass ,20,I,
+09-004,3-Jan,1,Phalaris arundinacea,reed canarygrass ,3,I,
+09-004,4-Jan,1,Phalaris arundinacea,reed canarygrass ,3,I,
+09-004,5-Jan,1,Phalaris arundinacea,reed canarygrass ,15,I,
+09-004,6-Jan,1,Phalaris arundinacea,reed canarygrass ,3,I,
+09-004,8-Jan,1,Phalaris arundinacea,reed canarygrass ,4,I,
+09-004,9-Jan,1,Phalaris arundinacea,reed canarygrass ,25,I,
+09-004,1-Jan,1,Phalaris arundinacea,reed canarygrass ,100,I,
+09-004,2-Jan,1,,rock,10,S,
+09-004,8-Jan,1,,rock,20,S,
+09-004,4-Jan,1,Schoenoplectus tabernaemontani,soft-stemmed bulrush ,2,N,
+09-004,6-Jan,1,Schoenoplectus tabernaemontani,soft-stemmed bulrush ,13,N,220
+09-004,8-Jan,1,Schoenoplectus tabernaemontani,soft-stemmed bulrush ,7,N,174
+09-004,9-Jan,1,Schoenoplectus tabernaemontani,soft-stemmed bulrush ,2,N,
+09-004,6-Jan,1,Juncus acuminatus,tapered rush,10,N,65
+09-004,2-Jan,1,Sium suave,water-parsnip,4,N,
+09-004,3-Jan,1,Sium suave,water-parsnip,7,N,
+09-004,5-Jan,1,Sium suave,water-parsnip,3,N,
+09-004,10-Jan,1,Sium suave,water-parsnip,1,N,
+09-004,2-Jan,1,Alisma sp.,water-plantain,6,U,
+09-004,3-Jan,1,Alisma sp.,water-plantain,1,U,
+09-004,4-Jan,1,Alisma sp.,water-plantain,1,U,
+09-004,5-Jan,1,Alisma sp.,water-plantain,5,U,
+09-004,6-Jan,1,Alisma sp.,water-plantain,3,U,
+09-004,9-Jan,1,Alisma sp.,water-plantain,0.5,U,
+09-004,10-Jan,1,Alisma sp.,water-plantain,1,U,
+09-004,2-Jan,1,Lilaeopsis occidentalis,western lilaeopsis,1,N,
+09-004,3-Jan,1,Lilaeopsis occidentalis,western lilaeopsis,10,N,
+09-004,7-Jan,1,Lilaeopsis occidentalis,western lilaeopsis,10,N,
+09-004,10-Jan,1,Lilaeopsis occidentalis,western lilaeopsis,3,N,

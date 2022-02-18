@@ -1,4 +1,4 @@
-# Fraser River Estuary Compensation Site Data
+# Fraser River Estuary Created Tidal Marsh Study
 
 The following repo contains marsh habitat compensation site data collected in 2015 and 2021 in the Fraser River Estuary. Data from 2015 were collected by Megan Lievesley and Daniel Stewart (BC Conservation Foundation), with funding and direction from Brad Mason and Rob Knight (Community Mapping Network). Data from 2021 were collected by Daniel Hennigar and Robyn Ingham (Ducks Unlimited Canada) and Daniel Stewart (Asarum Ecological Consulting).
 

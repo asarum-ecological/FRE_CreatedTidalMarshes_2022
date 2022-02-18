@@ -1,0 +1,64 @@
+﻿SITE_ID,PLOT,COMMUNITY,Scientific,SPECIES_CODE,PERCENT_COVER,ORIGIN,MAX_LH
+14-004,1-Feb,2,Persicaria hydropiper,marshpepper smartweed,0.5,E,
+14-004,1-Feb,2,Callitriche stagnalis,pond water-starwort,0.5,E,
+14-004,3-Feb,2,Callitriche stagnalis,pond water-starwort,0.5,E,
+14-004,1-Jan,1,Phalaris arundinacea,reed canarygrass,20,I,120
+14-004,2-Jan,2,Phalaris arundinacea,reed canarygrass,35,I,170
+14-004,3-Jan,1,Phalaris arundinacea,reed canarygrass,55,I,
+14-004,4-Jan,1,Phalaris arundinacea,reed canarygrass,45,I,125
+14-004,5-Jan,1,Iris pseudacorus,yellow iris,20,I,135
+14-004,5-Jan,1,Phalaris arundinacea,reed canarygrass,20,I,135
+14-004,6-Jan,1,Phalaris arundinacea,reed canarygrass,70,I,145
+14-004,6-Jan,1,Iris pseudacorus,yellow iris,5,I,
+14-004,7-Jan,1,Phalaris arundinacea,reed canarygrass,25,I,135
+14-004,8-Jan,1,Phalaris arundinacea,reed canarygrass,30,I,155
+14-004,9-Jan,1,Phalaris arundinacea,reed canarygrass,30,I,130
+14-004,10-Jan,1,Iris pseudacorus,yellow iris,20,I,150
+14-004,10-Jan,1,Phalaris arundinacea,reed canarygrass,50,I,150
+14-004,11-Jan,1,Phalaris arundinacea,reed canarygrass,55,I,100
+14-004,1-Feb,2,Equisetum arvense,common horsetail,0.5,N,
+14-004,1-Feb,2,Eleocharis palustris,common spike-rush,1,N,
+14-004,1-Feb,2,Crassula aquatica,pigmyweed,0.5,N,
+14-004,2-Feb,2,Crassula aquatica,pigmyweed,0.5,N,
+14-004,2-Feb,2,Carex obnupta,slough sedge,0.5,N,
+14-004,3-Feb,2,Equisetum arvense,common horsetail,0.5,N,
+14-004,3-Feb,2,Carex obnupta,slough sedge,0.5,N,
+14-004,1-Jan,1,Equisetum arvense,common horsetail,1,N,
+14-004,1-Jan,1,Eleocharis palustris,common spike-rush,1,N,
+14-004,1-Jan,1,Carex obnupta,slough sedge,15,N,
+14-004,1-Jan,1,Carex sitchensis,Sitka sedge,45,N,110
+14-004,1-Jan,1,Typha latifolia,common cattail,1,N,
+14-004,2-Jan,2,Typha latifolia,common cattail,5,N,
+14-004,3-Jan,1,Carex sitchensis,Sitka sedge,9,N,
+14-004,3-Jan,1,Typha latifolia,common cattail,5,N,
+14-004,4-Jan,1,Typha latifolia,common cattail,7,N,
+14-004,4-Jan,1,Equisetum arvense,common horsetail,0.5,N,
+14-004,7-Jan,1,Carex obnupta,slough sedge,3,N,
+14-004,8-Jan,1,Equisetum arvense,common horsetail,1,N,
+14-004,9-Jan,1,Carex sitchensis,Sitka sedge,2,N,
+14-004,11-Jan,1,Typha latifolia,common cattail,8,N,
+14-004,1-Feb,2,,ground,97,S,
+14-004,2-Feb,2,,ground,99,S,
+14-004,3-Feb,2,,ground,98.5,S,
+14-004,1-Jan,1,,bare ground,10,S,
+14-004,1-Jan,1,,leaf litter,20,S,
+14-004,2-Jan,2,,bare ground,2,S,
+14-004,2-Jan,2,,leaf litter,85,S,
+14-004,3-Jan,1,,leaf litter,35,S,
+14-004,3-Jan,1,,bare ground,5,S,
+14-004,4-Jan,1,,detritus,30,S,
+14-004,5-Jan,1,,bare ground,1,S,
+14-004,5-Jan,1,,leaf litter,90,S,
+14-004,6-Jan,1,,bare ground,0,S,
+14-004,6-Jan,1,,leaf litter,20,S,
+14-004,7-Jan,1,,Bare ground,3,S,
+14-004,7-Jan,1,,leaf litter,75,S,
+14-004,8-Jan,1,,bare ground,0,S,
+14-004,8-Jan,1,,leaf litter,70,S,
+14-004,9-Jan,1,,bare ground,3,S,
+14-004,9-Jan,1,,leaf litter,65,S,
+14-004,10-Jan,1,,bare ground,0,S,
+14-004,10-Jan,1,,leaf litter,30,S,
+14-004,10-Jan,1,,log,25,S,
+14-004,11-Jan,1,,bare ground,5,S,
+14-004,11-Jan,1,,leaf litter,35,S,

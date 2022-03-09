@@ -45,26 +45,8 @@ FRECOMPSITES <- FRESITES %>%
 FREREFSITES <- FRESITES %>%
   filter(REFERENCE == "YES") 
 
-
-#STANDARDIZING DATA FOR MODELS
-
-#standardize continuous variables to be centered on the mean (mean becomes 0) using the standardize function from robustHD  
-FRECOMPSITES$SAMPLING_AGEs <-standardize(FRECOMPSITES$SAMPLING_AGE, centerFun = mean, scaleFun = sd)
-FRECOMPSITES$AREA_MAPPEDs <-standardize(FRECOMPSITES$AREA_MAPPED, centerFun = mean, scaleFun = sd)
-FRECOMPSITES$KM_UPRIVERs <-standardize(FRECOMPSITES$KM_UPRIVER, centerFun = mean, scaleFun = sd)
-FRECOMPSITES$ELEVATIONs <-standardize(FRECOMPSITES$ELEVATION, centerFun = mean, scaleFun = sd)
-FRECOMPSITES$PROX_CHANs <-standardize(FRECOMPSITES$PROX_CHAN, centerFun = mean, scaleFun = sd)
-#FRECOMPSITES$CARELYN_MH <-standardize(FRECOMPSITES$CARELYN_MH, centerFun = mean, scaleFun = sd)
-
-#standardize continuous variables to be centered on the mean (mean becomes 0) using the standardize function from robustHD  
-FRESITES$SAMPLING_AGEs <-standardize(FRESITES$SAMPLING_AGE, centerFun = mean, scaleFun = sd)
-FRESITES$AREA_MAPPEDs <-standardize(FRESITES$AREA_MAPPED, centerFun = mean, scaleFun = sd)
-FRESITES$KM_UPRIVERs <-standardize(FRESITES$KM_UPRIVER, centerFun = mean, scaleFun = sd)
-FRESITES$ELEVATIONs <-standardize(FRESITES$ELEVATION, centerFun = mean, scaleFun = sd)
-FRESITES$PROX_CHANs <-standardize(FRESITES$PROX_CHAN, centerFun = mean, scaleFun = sd)
-FRESITES$CARELYN_MHs <-standardize(FRESITES$CARELYN_MH, centerFun = mean, scaleFun = sd)
-
 ###RESEARCH QUESTION #2: What factors affect the health of existing marshes?
+#Non-Native Richness
 
 #Exploratory Plots
 
@@ -119,7 +101,7 @@ M4.5 <- ggplot(FRESITES, aes(x=KM_UPRIVER,y=NN_RICH)) +
         panel.background = element_blank(), axis.line = element_line(colour = "black"))
 
 #elevation
-M4.6 <- ggplot(FRESITES, aes(x=ELEVATION,y=NN_RICH)) +
+M4.6 <- ggplot(FRESITES, aes(x=ELEV_ADJ,y=NN_RICH)) +
   geom_point(alpha = 0.12) +
   geom_smooth(method = 'lm') +
   labs(x ="Elevation (m)", y = "") +
@@ -129,22 +111,22 @@ M4.6 <- ggplot(FRESITES, aes(x=ELEVATION,y=NN_RICH)) +
 
 #interaction of elevation an distance upriver
 #first have to calculate mean, and mean +/- sd for visualisation
-FRESITES$ELEVATION_2tile <- ntile(FRESITES$ELEVATION, 2)
-FRESITES$ELEVATION_3tile <- ntile(FRESITES$ELEVATION, 3)
-x <- FRESITES$ELEVATION
+FRESITES$ELEV_ADJ_2tile <- ntile(FRESITES$ELEV_ADJ, 2)
+FRESITES$ELEV_ADJ_3tile <- ntile(FRESITES$ELEV_ADJ, 3)
+x <- FRESITES$ELEV_ADJ
 
-FRESITES$ELEVATION3group <-
+FRESITES$ELEV_ADJ3group <-
   case_when(x > mean(x)+sd(x) ~ "high",
             x < mean(x)+sd(x) & x > mean(x)-sd(x) ~ "average",
             x < mean(x)-sd(x) ~ "low")
 
-count(FRESITES,FRESITES$ELEVATION3group)
-FRESITES$ELEVATION3group <- factor(FRESITES$ELEVATION3group, levels = c("high", "average", "low"))
+count(FRESITES,FRESITES$ELEV_ADJ3group)
+FRESITES$ELEV_ADJ3group <- factor(FRESITES$ELEV_ADJ3group, levels = c("high", "average", "low"))
 
 #plot 
 M4.7 <- FRESITES %>%
   ggplot() +
-  aes(x = KM_UPRIVER, y = NN_RICH, group = ELEVATION3group, color = ELEVATION3group, fill =ELEVATION3group) +
+  aes(x = KM_UPRIVER, y = NN_RICH, group = ELEV_ADJ3group, color = ELEV_ADJ3group, fill =ELEV_ADJ3group) +
   geom_point(alpha = 0.12) +
   geom_smooth(method = "lm") +
   ylim(0,14) +
@@ -155,7 +137,7 @@ M4.7 <- FRESITES %>%
 
 M4.7.2 <- FRESITES %>%
   ggplot() +
-  aes(x = KM_UPRIVER, y = NN_RICH, color = ELEVATION3group) +
+  aes(x = KM_UPRIVER, y = NN_RICH, color = ELEV_ADJ3group) +
   geom_point(alpha = 0.12) +
   geom_smooth(method = "lm") +
   theme(panel.grid.major = element_blank(), legend.box.margin = margin(0,0,10,25),panel.grid.minor = element_blank(),
@@ -170,7 +152,7 @@ M4.7Legend <- get_legend(M4.7.2)
 #interaction of channel proximity and elevation
 M4.8 <- FRESITES %>%
   ggplot() +
-  aes(x = PROX_CHAN, y = NN_RICH, group = ELEVATION3group, color = ELEVATION3group, fill =ELEVATION3group) +
+  aes(x = PROX_CHAN, y = NN_RICH, group = ELEV_ADJ3group, color = ELEV_ADJ3group, fill =ELEV_ADJ3group) +
   geom_point(alpha = 0.12) +
   geom_smooth(method = "lm") +
   ylim(0,14) +
@@ -184,28 +166,24 @@ M4.8 <- FRESITES %>%
 #elevation*distance upriver is under the assumption that elevation-related stresses are most pronounced at estuary mouth
 #arm*distance upriver is under the assumption that salinity/tide related stressors are more pronounced in the North Arm than Main
 # Formula for same model, sans cattail-present sites 
-MODEL4 <- lmer(NN_RICH~(INLAND + ARM + REFERENCE + PROX_CHAN + KM_UPRIVER*ELEVATION) + (1|SITE) + (1|SAMPLE_YEAR),data = FRESITES, REML = TRUE)
+MODEL4 <- lmer(NN_RICH~(INLAND + ARM + REFERENCE + PROX_CHAN + KM_UPRIVER*ELEV_ADJ) + (1|SITE) + (1|SAMPLE_YEAR),data = FRESITES, REML = TRUE)
 
 #SUMMARY DATA
 summary(MODEL4)
-visreg(MODEL4) #visreg plots
-anova(MODEL4, type=3) #anova
 
-#CHECKING MODEL ASSUMPTIONS
-plot(MODEL4) #looks good, no patterns evident
+#MODEL DIAGNOSTICS
+r.squaredGLMM(MODEL4) #evaluating model fit
+plot(MODEL4) 
 qqnorm(resid(MODEL4)) 
-qqline(resid(MODEL4)) #points fall along line, look good
-r.squaredGLMM(MODEL4)
-
-#checking variable inflation factor (VIF)
-vif(MODEL4)
+qqline(resid(MODEL4)) 
+vif(MODEL4)#checking variable inflation factor (VIF)
 
 #MODEL VISUALISATIONS: LIKELY FOR SUPPLEMENTAL MATERIAL 
-#plotting how the expected value of the outcome (% marsh) changes as a function of x, with all other variables in the model held fixed.
-visreg(MODEL4, points.par = list(pch = 16, cex = 0.8, col = "red"),type="contrast","ARM", xlab=("River Arm"), ylab="Non-Native Richness/Plot")
+#plotting how the expected value of the outcome (non-native richness) changes as a function of x, with all other variables in the model held fixed.
+visreg(MODEL4, points.par = list(pch = 16, cex = 0.8, col = "red"),type="contrast","ELEV_ADJ", xlab=("Elevation (m)"), ylab="Non-Native Richness/Plot")
 
 #plotting interaction effect
-visreg(MODEL4,"KM_UPRIVER", by = "ELEVATION", overlay=TRUE,partial = FALSE, gg=TRUE) + 
+visreg(MODEL4,"KM_UPRIVER", by = "ELEV_ADJ", overlay=TRUE,partial = FALSE, gg=TRUE) + 
   theme_bw()+
   xlab("Distance Upriver (km)") + ylab("Non-Native Richness/Plot") +
   theme(panel.grid.major = element_blank(),
